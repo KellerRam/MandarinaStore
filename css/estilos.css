@@ -1,3 +1,4 @@
+/*estilos para inicio*/
 * {
     box-sizing: border-box;
 }
@@ -243,9 +244,6 @@ header nav.menu:focus{
   border-radius: .5rem;
   object-fit: cover;
 }
-.recomendaciones div p{ 
-  margin: 0; 
-}
 .recomendaciones div p{
   color:#ff7e38;
   font-size: 1rem;
@@ -265,7 +263,7 @@ header nav.menu:focus{
   margin: 0;
 }
 
-/*Estilos para la página "Acerca de" */
+/*estilos para acerca de */
 .acerca-de h1 > h2 {
   margin: 0;
   font-size: clamp(1rem, 5vw, 2rem);
@@ -413,7 +411,7 @@ header nav.menu:focus{
     right: -0.5rem;
   }
 }
-/*Estilos para historia*/ 
+/*estilos para historia*/ 
 main .historia {
   display: flex;
   justify-content: center;
@@ -467,7 +465,7 @@ main .historia1 h3 {
     font-size: 1.8rem;
   }
 }
-/*estilos para la sección "Cómo comprar" */
+/*estilos para como comprar */
 .como-comprar {
   display: flex;
   flex-direction: column;
@@ -516,4 +514,58 @@ main .instrucciones ol {
   main .instrucciones h3 {
     font-size: 1.8rem;
   }
+}
+/*estilos para catalogo*/
+.catalogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #f2f4f7;
+  margin-inline: auto;
+  width: 95%;
+  height: 90%;
+  border-radius: 1rem;
+  padding: 3rem 4.5rem;
+}
+.productos div{
+  flex: 0 0 15rem;
+  height: 20rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+.productos div img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: .5rem;
+  object-fit: cover;
+}
+.productos div p{
+  color:#ff7e38;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.productos div .precio{
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.productos div .anticipo{
+  color: #727272;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin: 0;
 }

@@ -1,4 +1,4 @@
-const slider = document.querySelector('.slider'); // Your slider container
+const slider = document.querySelector('.slider');
 const buttons = document.querySelectorAll('.slider-nav button');
 let index = 0;
 
