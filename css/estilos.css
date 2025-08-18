@@ -203,8 +203,10 @@ header nav.menu:focus{
   gap: 1rem;
   padding-inline: .25rem;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
   scrollbar-color: #ff0070 #fbbbd7;  
 }
 .recomendaciones::-webkit-scrollbar {
