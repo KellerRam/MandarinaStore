@@ -58,9 +58,11 @@ main {
 .slider-container::-webkit-scrollbar {
     display: none;
 }
-.slider img{
+.slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 .slider-nav{
@@ -73,9 +75,9 @@ main {
   z-index: 1;
 }
 .slider-nav button{
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
   background-color: #000000;
   opacity: 0.5;
   border: none;
