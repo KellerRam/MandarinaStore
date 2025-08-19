@@ -516,25 +516,28 @@ main .instrucciones ol {
   }
 }
 /*estilos para catalogo*/
-.catalogo{
+main .catalogo {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: center;     /* solo centrado horizontal */
+  padding: 2rem 1rem;
+  gap: 2rem;
+  background-color: #f3f5f7;
+  box-sizing: border-box;
 }
-.productos{
-  display: flex;
-  flex-wrap: wrap;
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   gap: 1rem;
   background-color: #f2f4f7;
   margin-inline: auto;
   width: 95%;
-  height: 90%;
   border-radius: 1rem;
-  padding: 3rem 4.5rem;
+  padding: 2rem 1rem;
 }
-.productos div{
-  flex: 0 0 15rem;
-  height: 20rem;
+
+.productos div {
   border: 1px solid #e5e7eb;
   border-radius: 1rem;
   background: #fff;
@@ -544,26 +547,31 @@ main .instrucciones ol {
   justify-content: center;
   gap: 0.3rem;
   cursor: pointer;
+  padding: 1rem;
 }
+
 .productos div img {
   width: 10rem;
   height: 10rem;
   border-radius: .5rem;
   object-fit: cover;
 }
-.productos div p{
-  color:#ff7e38;
+
+.productos div p {
+  color: #ff7e38;
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
 }
-.productos div .precio{
+
+.productos div .precio {
   color: #000000;
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0;
 }
-.productos div .anticipo{
+
+.productos div .anticipo {
   color: #727272;
   font-weight: bold;
   font-size: 0.8rem;
